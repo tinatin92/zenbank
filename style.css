@@ -173,8 +173,93 @@ ol li{
     height: 288px;
     border-radius: 16px;
 }
+.slider{
+  height: 100vh;
+  max-height: 900px;
+  min-width: 0;
+  min-height: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide-how{
+ 
+  width: 100%;
 
+ 
+}
+.slick-track{
+  display: flex;
+  /* flex-direction: column; */
+}
+.flex__column{
+  min-width: 0;
+  min-height: 0;
+}
+.how{
+  height: 450px;
+}
+.slick-slide{
+
+  height: 450px !important;
+/*   max-height: 900px !important; */
+  width: 100%;
+  display: flex !important;
+ 
+  align-items: center !important;
+  padding: 0 100px 0 100px;
+}
+.slick-list{
+  overflow: hidden;
+}
+.slick-slider{
+  height: 450px;
+  
+}
+.relative {
+  position: relative;
+}
+.slider-content{
+  width: 500px;
+  height: 300px;
+ 
+  
+}
+.slider-content img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 24px;
+}
+.comment{
+  display: inline-block;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 24px;
+  z-index: 100000;
+  position: absolute;
+  top: 130px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, .2);
+  transform: scale(0);
+}
+.slick-slide.slick-active .comment{
+  transition-delay: .3s;
+  transform: scale(1);
+  transition-duration: .3s;
+  
+}
+.slick-slide:nth-child(odd){
+  justify-content: flex-end !important;
+ 
+}
+.slick-slide:nth-child(even) .comment{
+  right: -100px;
+}
+.slick-slide:nth-child(odd) .comment{
+  left: -100px;
+
+}
 
 
 
