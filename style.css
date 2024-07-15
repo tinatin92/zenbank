@@ -243,9 +243,15 @@ ol li{
   box-shadow: 12px 12px 12px rgba(0, 0, 0, .2);
   transform: scale(0);
 }
-.slick-slide.slick-active .comment{
+.slick-slide.slick-current.slick-active .comment{
   transition-delay: .3s;
   transform: scale(1);
+  transition-duration: .3s;
+  
+}
+.slick-slide.slick-active .comment{
+transition-delay: .3s;
+  transform: scale(0);
   transition-duration: .3s;
   
 }
